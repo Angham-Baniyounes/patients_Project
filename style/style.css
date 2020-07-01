@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #2b33d1;
+}
+.viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+  padding: 15px;
+}
+/* Sidebar Styles */
+.sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #151988;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-right: 1.5px solid #000;
+}
+.sidebar .nav a {
+  background: none;
+  border-bottom: 1.2px solid rgb(199, 198, 198);
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+.sidebar .nav a:hover {
+  background: none;
+  color: #cce7fe;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.sidebar .nav a.logout {
+  position: fixed;
+  bottom: 40px;
+  border: none;
+}
+.sidebar .nav a.logout:hover {
+  color: red;
+}
+/*content page*/
+.content > div {
+  margin: 20px 35px;
+}
+.content > div > .row > h1 {
+  display: inline;
+}
+.btn {
+  width: 95px;
+}
+/*patients List*/
+.patientsList .row .btn {
+  margin-top: 5px;
+}
+.patientsList .row .addPatient, .usersList .row .addUser {
+  box-shadow: 2px 2px #000;
+}
+.patientsList .row:last-child, .usersList .row:last-child {
+  margin-top: 20px ;
+}
+.patientsList .row thead {
+  text-align: center;
+}
+.patientsList .row tbody td:nth-child(2) {
+  text-align: right;
+}
+.patientsList .row tbody td:last-child {
+  text-align: center;
+}
+.patientsList .btn-default {
+  width: 70px;
+  text-align: center;
+  color: #286090;
+  font-weight: bold;
+}
+.patientsList .glyphicon-pencil {
+  margin-left: 5px;
+}
+/*patient Edit*/
+.form-inline {
+  margin-top: 10px;
+}
+.form-inline .row {
+  margin-top: 50px;
+}
+.form-inline .row .form-group .glyphicon {
+    font-size: 22px;
+    top: 5px;
+}
+.form-inline .row .form-group label:first-child {
+  width: 35%;
+}
+.form-inline .row .form-group input, .form-inline .row .form-group select {
+  width: 60%;
+}
+.form-inline .row .form-group input[type=radio], .form-inline .row .form-group input[type=checkbox] {
+  width: auto;
+}
+.form-inline .row .form-group input[type=checkbox] {
+  width: auto;
+  vertical-align: text-top;
+  margin-top: -7px;
+}
+.form-inline .row:nth-child(2) .form-group:nth-child(2) input {
+  width: 53%;
+}
+.form-inline .row:nth-child(2) .form-group  .glyphicon {
+  width: 7%;
+  font-size: 20px;
+  text-align: end;
+}
+.form-inline .control-label {
+  text-align: left;
+}
+.form-inline .btn, .userEdit .btn {
+  box-shadow: 2px 2px 1px #000;
+  width: 120px;
+  color: #000;
+  font-size: 16px;
+}
+.form-inline .btn-primary, .userEdit .btn-primary {
+  margin-right: 15px;
+}
+/*User Edit*/
+.userEdit >.row:last-child {
+  margin: 40px auto;
+}
